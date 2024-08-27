@@ -9,7 +9,7 @@ hide: true
 
 ## About Me
 - I love to play sports such as basketball, soccer, and American football
-- I like to eat yummy food
+- I love to travel and visit new and beautiful places around the world
 
 ## Goals for this year
 
