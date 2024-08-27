@@ -5,4 +5,17 @@ description: Home Page
 hide: true
 ---
 
-My journey starts here.
+# Welcome to Armaghan's World
+
+## About Me
+- I love to play sports such as basketball, soccer, and American football
+- I like to eat yummy food
+
+## Goals for this year
+
+
+## Previous Experience
+
+
+## Fun Game
+-In blogs is a game that I sourced from github. I used html and markdown ideology to edit the color and movement speed of the snake.
