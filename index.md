@@ -150,5 +150,37 @@ document.addEventListener('keydown', function(e) {
 requestAnimationFrame(loop);
 </script>
 
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running Mario</title>
+  <style>
+    /* Keyframes for running animation */
+    @keyframes run-across {
+      0% {
+        transform: translateX(-1000px); /* Start off the left edge of the viewport */
+      }
+      100% {
+        transform: translateX(calc(150vw + 100px)); /* End just off the right edge of the viewport */
+      }
+    }
+    /* Style for Mario */
+    #running-mario {
+      position: fixed;
+      bottom: 50px; /* Distance from the bottom of the screen */
+      width: 25px;
+      height: 50px;
+      animation: run-across 6s linear infinite; /* Adjust '6s' for speed */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mario GIF -->
+  <img id="running-mario" src="/Armaghan_2025/assets/images/mario-8bit-unscreen.gif" alt="Running Mario">
+
 </body>
 </html>
