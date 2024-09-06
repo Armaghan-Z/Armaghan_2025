@@ -7,7 +7,7 @@ hide: true
 
 <html>
 <head>
-<title>Armaghan's World</title>
+<title>Armaghan's World </title>
 <style>
   /* Style for the navigation bar */
   .navbar {
@@ -54,7 +54,7 @@ hide: true
 <body>
 
 <!-- Main content -->
-<h1>Welcome to Armaghan's World</h1>
+<h1>Welcome to Armaghan's World 😎</h1>
 <hr>
 <h2>Fun Game</h2>
 <p> - Right below this is a game that I sourced from GitHub. I used HTML and markdown ideology to edit the color and movement speed of the snake. You are able to control using the up, down, left, and right arrow keys.</p>

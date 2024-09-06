@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# About Armaghan Zarak
+# About Armaghan Zarak 😎   
 
 ## About Me
 
@@ -172,5 +172,41 @@ permalink: /about/
     loadQuestion();
 </script>
 
+</body>
+</html>
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Button</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://espn.com/nfl/player/_/id/3116406/tyreek-hill" class="button" target="_blank">
+        Tyreek Hill
+    </a>
 </body>
 </html>
