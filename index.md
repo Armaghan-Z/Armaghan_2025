@@ -80,10 +80,10 @@ hide: true
 
 <!-- About Me Section -->
 <div class="bio-section">
-  <img src="/Armaghan_2025/assets/images/Me-in-Italy.jpeg" alt="Armaghan Zarak">
+<img src="/assets/Images/ArmaghanRiverIt.jpeg" alt="Armaghan Zarak">
   <h2>Hello, I'm Armaghan Zarak</h2>
   <p>A passionate coder, athlete, and lifelong learner.</p>
-  <p>From crafting clean code to scoring goals on the field, I thrive on challenge and creativity. This site is a blend of my interests, including projects, thoughts, and things I love to do. Feel free to explore!</p>
+  <p>From crafting clean code to getting baskets on the court, I thrive on challenge and creativity. This site is a blend of my interests, including projects, thoughts, and things I love to do. Feel free to explore!</p>
   
 
 <hr>
