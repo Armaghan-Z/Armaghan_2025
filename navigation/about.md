@@ -1,87 +1,37 @@
 ---
 layout: page
-title: About
+title: About Armaghan Zarak 😎 
 permalink: /about/
 ---
 
-# About Armaghan Zarak 😎   
-
 ## About Me
 
-- I love to play sports such as Basketball, Soccer, and American football.
-- I love to travel and visit new and beautiful places around the world. Below, I have inserted an image of my recent travels to Cappadocia in Turkey:
+Hello! My name is Armaghan Zarak, and I have a diverse background when it comes to places I’ve called home. I was born in California, specifically in the Bay Area, where I spent my first two years in San Jose. After that, I moved to Dallas, Texas, and lived there for seven years, which gave me a unique perspective on life in both states. For the past seven years, I’ve been back in California, and it feels great to be home again! 
 
-  <img src="/Armaghan_2025/assets/images/Picture1.jpeg" alt="Hot air balloons littering the Sunrise" width="400px" height="500px"/>
+Below is the California state flag to represent where my journey began and where I’ve spent most of my life:
 
-## Goals for this year
+<img src="/Armaghan_2025/assets/images/Flag_of_California.svg" width= 200px height=150px>
+<img src="/Armaghan_2025/assets/images/StateofTexasFlag_2048x.webp" width= 200px height=200px>
 
-- Some goals I have for this school year are to be able to code well enough to create my own website and to know the basics of how to code.
+## Sports and Hobbies
+
+I’m a huge sports fan! I love playing basketball, soccer, and American football. When I’m not on the field or court, I enjoy traveling and discovering new, beautiful places around the world. Recently, I had the chance to visit Cappadocia, Turkey, where I experienced an amazing hot air balloon littered sunrise. Here’s a glimpse of that trip:
+
+<img src="/Armaghan_2025/assets/images/Picture1.jpeg" alt="Hot air balloons littering the Sunrise" width="400px" height="500px"/>
+
+## Goals for This Year
+
+This year, my primary focus is on improving my coding skills. I want to become proficient enough to create my own website from scratch and master the basics of various coding languages.
 
 ## Previous Experience
 
-- I have taken a 2-day course outside of school. But other than this, I have no other experience in coding.
+Though I’ve taken a short, 2-day coding course outside of school, I am still quite new to the world of programming. This year, I’m dedicated to changing that!
 
 ## Interests
 
-- I love to learn about geography and play sports with friends.
-- When I actually have time, I love to play video games with friends.
+Geography is a subject I find fascinating, and I’m always eager to learn more about different places. When I have some downtime, I enjoy playing video games with friends, and of course, playing sports with them is always a great way to stay active.
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Quiz</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #2c3e50; /* Darker background */
-            color: #ecf0f1; /* Lighter text color */
-            text-align: center;
-            padding: 20px;
-        }
-        .quiz-container {
-            max-width: 600px;
-            margin: auto;
-            background-color: #34495e; /* Slightly lighter background for the quiz container */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .question {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-        .answers button {
-            display: block;
-            width: 100%;
-            margin: 5px 0;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-            border: 1px solid #7f8c8d;
-            background-color: #1abc9c; /* Button color */
-            color: #fff; /* White text color for buttons */
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s; /* Added transition for animation */
-        }
-        .answers button:hover {
-            background-color: #16a085; /* Darker shade on hover */
-        }
-        .correct {
-            background-color: #2ecc71 !important; /* Green color for correct answers */
-            transform: scale(1.05); /* Slightly increase the size */
-        }
-        .wrong {
-            background-color: #e74c3c !important; /* Red color for wrong answers */
-            transform: scale(0.95); /* Slightly decrease the size */
-        }
-        .result {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
+## Interactive Quiz
 
 <div class="quiz-container">
     <h2>Country Quiz</h2>
@@ -150,15 +100,13 @@ permalink: /about/
             button.classList.add("wrong");
         }
 
-        // Disable all buttons after an answer is selected
         const buttons = document.querySelectorAll(".answers button");
         buttons.forEach(btn => btn.disabled = true);
 
-        // Proceed to the next question after a short delay
         setTimeout(() => {
             currentQuestion++;
             loadQuestion();
-        }, 1000); // 1 second delay to show the color change
+        }, 1000);
     }
 
     function showResult() {
@@ -172,68 +120,98 @@ permalink: /about/
     loadQuestion();
 </script>
 
-</body>
-</html>
+## Tyreek Hill Stats
 
+As a Miami Dolphins fan, I closely follow Tyreek Hill, who is currently one of the top-rated players in the NFL. You can check out his ESPN stats here:
 
+<a href="https://espn.com/nfl/player/_/id/3116406/tyreek-hill" class="button" target="_blank">
+    Tyreek Hill
+</a>
 
+## Image Gallery
 
+Here’s a small collection of some images that represent my life and interests:
 
+<div class="gallery-container">
+  <div class="gallery">
+    <img src="/Armaghan_2025/assets/Images/Chamanoix-View.jpeg" alt="Chamanoix View">
+    <img src="/Armaghan_2025/assets/Images/IMG_0282.jpeg" alt="Image 0282">
+    <img src="/Armaghan_2025/assets/Images/IMG_7755.jpeg" alt="Image 7755">
+    <img src="/Armaghan_2025/assets/Images/IMG_7828.jpeg" alt="Image 7828">
 
- Tyreek hill is currently rated as the best player in the NFL as of late, and as a Miami Dolphins fan I thought it would appropriate to add a link taking you to his ESPN stats.
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Button</title>
-    <style>
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: black;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            text-align: center;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <a href="https://espn.com/nfl/player/_/id/3116406/tyreek-hill" class="button" target="_blank">
-        Tyreek Hill
-    </a>
-</body>
-</html>
-
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div.scroll-container {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-}
-div.scroll-container img {
-  padding: 10px;
-}
-</style>
-</head>
-<body>
-
-<h2>Interesting Images about me!</h2>
-
-<div class="scroll-container">
-  <img src="/Armaghan_2025/assets/Images/Chamanoix-View.jpeg" width="600" height="400">
-  <img src="img_forest.jpg" width="600" height="400">
-  <img src="img_lights.jpg" width="600" height="400">
-  <img src="img_mountains.jpg" width="600" height="400">
+  </div>
 </div>
 
+<style>
+    .quiz-container {
+        max-width: 600px;
+        margin: auto;
+        background-color: #34495e;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .question {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .answers button {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #7f8c8d;
+        background-color: #1abc9c;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .answers button:hover {
+        background-color: #16a085;
+    }
+    .correct {
+        background-color: #2ecc71 !important;
+        transform: scale(1.05);
+    }
+    .wrong {
+        background-color: #e74c3c !important;
+        transform: scale(0.95);
+    }
+    .result {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: black;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: #0056b3;
+    }
+    .gallery-container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .gallery {
+        display: flex;
+        overflow-x: auto;
+        padding: 10px;
+        background-color: #333;
+    }
+    .gallery img {
+        flex: 0 0 auto;
+        margin-right: 10px;
+        border-radius: 5px;
+        max-height: 400px;
+    }
+</style>
