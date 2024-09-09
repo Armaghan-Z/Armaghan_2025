@@ -180,7 +180,7 @@ permalink: /about/
 
 
 
-
+ Tyreek hill is currently rated as the best player in the NFL as of late, and as a Miami Dolphins fan I thought it would appropriate to add a link taking you to his ESPN stats.
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -191,7 +191,7 @@ permalink: /about/
             display: inline-block;
             padding: 10px 20px;
             font-size: 16px;
-            color: white;
+            color: black;
             background-color: #007bff;
             border: none;
             border-radius: 5px;
@@ -210,3 +210,30 @@ permalink: /about/
     </a>
 </body>
 </html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+div.scroll-container img {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>Interesting Images about me!</h2>
+
+<div class="scroll-container">
+  <img src="/Armaghan_2025/assets/Images/Chamanoix-View.jpeg" width="600" height="400">
+  <img src="img_forest.jpg" width="600" height="400">
+  <img src="img_lights.jpg" width="600" height="400">
+  <img src="img_mountains.jpg" width="600" height="400">
+</div>
+

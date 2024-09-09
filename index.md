@@ -7,85 +7,114 @@ hide: true
 
 <html lang="en">
 <head>
-<title>Armaghan's World</title>
-<style>
-  /* Style for the navigation bar */
-  .navbar {
-    width: 100%;
-    background-color: #000;
-    overflow: hidden;
-  }
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  body {
-    margin: 0;
-    padding-top: 50px; /* Adjust to the height of the navbar */
-    background: black;
-    color: white;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  canvas {
-    border: 1px solid white;
-  }
-  h1, h2 {
-    text-align: center;
-    color: #e4002b;
-  }
-  p {
-    text-align: center;
-    font-size: 18px;
-    margin: 0 20px;
-  }
-  hr {
-    border: 0;
-    height: 1px;
-    background: #f2f2f2;
-    margin: 20px 0;
-  }
-  .bio-section {
-    padding: 20px;
-    text-align: center;
-  }
-  .bio-section img {
-    border-radius: 50%;
-    width: 150px;
-  }
-  .social-links {
-    margin-top: 20px;
-  }
-  .social-links a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armaghan's World</title>
+  <style>
+    /* Style for the navigation bar */
+    .navbar {
+      width: 100%;
+      background-color: #000;
+      overflow: hidden;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    body {
+      margin: 0;
+      padding-top: 50px; /* Adjust to the height of the navbar */
+      background: black;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    canvas {
+      border: 1px solid white;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #e4002b;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin: 0 20px;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: #f2f2f2;
+      margin: 20px 0;
+    }
+    .bio-section {
+      padding: 20px;
+      text-align: center;
+    }
+    .bio-section img {
+      border-radius: 50%;
+      width: 300px;
+      height: 450px;
+    }
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+    /* Keyframes for running animation */
+    @keyframes run-across {
+      0% {
+        transform: translateX(-1000px); /* Start off the left edge of the viewport */
+      }
+      100% {
+        transform: translateX(calc(150vw + 100px)); /* End just off the right edge of the viewport */
+      }
+    }
+    /* Style for Mario */
+    #running-mario {
+      position: fixed;
+      bottom: 50px; /* Distance from the bottom of the screen */
+      width: 25px;
+      height: 50px;
+      animation: run-across 6s linear infinite; /* Adjust '6s' for speed */
+    }
+    /* Center the image */
+    .centered-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
 </head>
-
 <body>
 
 <!-- Main content -->
 <h1>Welcome to Armaghan's World 😎</h1>
+
 <hr>
 
 <!-- About Me Section -->
-<div class="bio-section">
-<img src="/Armaghan_2025/assets/images/Me-in-Italy.jpeg" width="300" height="350">
+<img src="/Armaghan_2025/assets/images/Italian-River.jpeg" class="centered-image">
 
+<div class="bio-section">
+  <!--<img src="{{site.baseurl}}/Armaghan_2025/assets/images/Charles-Leclerc-Podium.jpeg" alt="Charles Leclerc" width="350" height="300">-->
+  <!--<img src="{{site.baseurl}}/assets/images/Me-in-Italy.jpeg" width="350" height="300">-->
   <h2>Hello, I'm Armaghan Zarak</h2>
   <p>A passionate coder, athlete, and lifelong learner.</p>
   <p>From crafting clean code to getting baskets on the court, I thrive on challenge and creativity. This site is a blend of my interests, including projects, thoughts, and things I love to do. Feel free to explore!</p>
-  
+</div>
 
 <hr>
 <h2>Fun Game</h2>
@@ -182,37 +211,8 @@ document.addEventListener('keydown', function(e) {
 requestAnimationFrame(loop);
 </script>
 
-
-
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Running Mario</title>
-  <style>
-    /* Keyframes for running animation */
-    @keyframes run-across {
-      0% {
-        transform: translateX(-1000px); /* Start off the left edge of the viewport */
-      }
-      100% {
-        transform: translateX(calc(150vw + 100px)); /* End just off the right edge of the viewport */
-      }
-    }
-    /* Style for Mario */
-    #running-mario {
-      position: fixed;
-      bottom: 50px; /* Distance from the bottom of the screen */
-      width: 25px;
-      height: 50px;
-      animation: run-across 6s linear infinite; /* Adjust '6s' for speed */
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Mario GIF -->
-  <img id="running-mario" src="/Armaghan_2025/assets/images/mario-8bit-unscreen.gif" alt="Running Mario">
+<!-- Mario GIF -->
+<img id="running-mario" src="{{site.baseurl}}/assets/images/mario-8bit-unscreen.gif" alt="Running Mario">
 
 </body>
 </html>
