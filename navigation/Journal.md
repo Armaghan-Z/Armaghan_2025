@@ -5,7 +5,7 @@ permalink: /Journal/
 ---
 
 
-#### Week 0: Setting Up the Foundation
+#### Week 0: Setting Up The Foundation
 In the first week of my coding journey, my primary focus was on setting up my development environment and ensuring that the `make` tool was functioning correctly. This involved initializing my repository and troubleshooting any issues that arose during setup. It was a crucial step in laying a solid foundation for my project.
 
 #### Weeks 1 & 2: Enhancing Functionality and Adding Features

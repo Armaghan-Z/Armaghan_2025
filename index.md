@@ -31,15 +31,16 @@ hide: true
       color: black;
     }
     body {
-      margin: 0;
-      padding-top: 50px; /* Adjust to the height of the navbar */
-      background: black;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-    }
+  margin: 0;
+  padding-top: 50px; /* Adjust to the height of the navbar */
+  background: white;  /* Change this to white */
+  color: black;  /* Update text color to black for readability */
+  font-family: 'Segoe UI', sans-serif;
+}
     canvas {
-      border: 1px solid white;
-    }
+  border: 1px solid white;
+  background-color: black; /* Set background to black */
+}
     h1, h2 {
       text-align: center;
       color: #e4002b;
@@ -148,9 +149,19 @@ function loop() {
     return;
   }
   count = 0;
-  context.clearRect(0,0,canvas.width,canvas.height);
+  // Clear the canvas
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  // Draw the grid
+  context.strokeStyle = '#444'; // Grid line color
+  for (var x = 0; x < canvas.width; x += grid) {
+    for (var y = 0; y < canvas.height; y += grid) {
+      context.strokeRect(x, y, grid, grid);
+    }
+  }
+  // Move the snake
   snake.x += snake.dx;
   snake.y += snake.dy;
+  // Wrap the snake around the edges
   if (snake.x < 0) {
     snake.x = canvas.width - grid;
   } else if (snake.x >= canvas.width) {
@@ -161,20 +172,25 @@ function loop() {
   } else if (snake.y >= canvas.height) {
     snake.y = 0;
   }
-  snake.cells.unshift({x: snake.x, y: snake.y});
+  // Keep track of the snake's cells
+  snake.cells.unshift({ x: snake.x, y: snake.y });
   if (snake.cells.length > snake.maxCells) {
     snake.cells.pop();
   }
+  // Draw the apple
   context.fillStyle = 'red';
-  context.fillRect(apple.x, apple.y, grid-1, grid-1);
+  context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
+  // Draw the snake
   context.fillStyle = 'green';
-  snake.cells.forEach(function(cell, index) {
-    context.fillRect(cell.x, cell.y, grid-1, grid-1);  
+  snake.cells.forEach(function (cell, index) {
+    context.fillRect(cell.x, cell.y, grid - 1, grid - 1);
+    // Check if the snake eats the apple
     if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
     }
+    // Check for snake collision with itself
     for (var i = index + 1; i < snake.cells.length; i++) {
       if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
         snake.x = 160;
