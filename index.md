@@ -107,7 +107,7 @@ hide: true
 <hr>
 
 <!-- About Me Section -->
-<img src="/Armaghan_2025/assets/images/Italian-River.jpeg" class="centered-image">
+<img src="/Armaghan_2025/assets/Images/Italian-River.jpeg" class="centered-image">
 
 <div class="bio-section">
   <!--<img src="{{site.baseurl}}/Armaghan_2025/assets/images/Charles-Leclerc-Podium.jpeg" alt="Charles Leclerc" width="350" height="300">-->
