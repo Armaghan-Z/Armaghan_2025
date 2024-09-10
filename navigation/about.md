@@ -5,11 +5,11 @@ permalink: /about/
 ---
 
 ## About Me
+<div>
+<p>Hello! My name is Armaghan Zarak, and I have a diverse background when it comes to places I’ve called home. I was born in California, specifically in the Bay Area, where I spent my first two years in San Jose. After that, I moved to Dallas, Texas, and lived there for seven years, which gave me a unique perspective on life in both states. For the past seven years, I’ve been back in California, and it feels great to be home again! </p>
 
-Hello! My name is Armaghan Zarak, and I have a diverse background when it comes to places I’ve called home. I was born in California, specifically in the Bay Area, where I spent my first two years in San Jose. After that, I moved to Dallas, Texas, and lived there for seven years, which gave me a unique perspective on life in both states. For the past seven years, I’ve been back in California, and it feels great to be home again! 
-
-Below is the California state flag to represent where my journey began and where I’ve spent most of my life:
-
+<p>Below is the California state flag to represent where my journey began and where I’ve spent most of my life: </p>
+</div>
 <img src="/Armaghan_2025/assets/images/Flag_of_California.svg" width= 200px height=150px>
 <img src="/Armaghan_2025/assets/images/StateofTexasFlag_2048x.webp" width= 200px height=200px>
 
@@ -120,12 +120,11 @@ Geography is a subject I find fascinating, and I’m always eager to learn more 
     loadQuestion();
 </script>
 
-## Tyreek Hill Stats
-
-As a Miami Dolphins fan, I closely follow Tyreek Hill, who is currently one of the top-rated players in the NFL. You can check out his ESPN stats here:
+<h3>This is Tyreek Hill's stats</h3>
+<p>As a Miami Dolphins fan, I closely follow Tyreek Hill, who is currently one of the top-rated players in the NFL. You can check out his ESPN stats here:</p>
 
 <a href="https://espn.com/nfl/player/_/id/3116406/tyreek-hill" class="button" target="_blank">
-    Tyreek Hill
+ Tyreek Hill
 </a>
 
 ## Image Gallery
@@ -215,3 +214,4 @@ Here’s a small collection of some images that represent my life and interests:
         max-height: 400px;
     }
 </style>
+
