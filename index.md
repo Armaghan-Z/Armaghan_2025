@@ -117,6 +117,12 @@ hide: true
   <p>From crafting clean code to getting baskets on the court, I thrive on challenge and creativity. This site is a blend of my interests, including projects, thoughts, and things I love to do. Feel free to explore!</p>
 </div>
 
+<h2> My Favorite Spotify Playlist 🎶</h2>
+
+<p>Here’s a Spotify playlist that I love listening to while working or just in General 😄:</p>
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0QkxqzssAhq5tHPKsfNDho?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 <hr>
 <h2>Fun Game</h2>
 <p> - Right below this is a game that I sourced from GitHub. I used HTML and markdown ideology to edit the color and movement speed of the snake. You are able to control using the up, down, left, and right arrow keys.</p>
@@ -232,3 +238,4 @@ requestAnimationFrame(loop);
 
 </body>
 </html>
+
