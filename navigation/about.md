@@ -10,8 +10,8 @@ permalink: /about/
 
 <p>Below is the California state flag to represent where my journey began and where I’ve spent most of my life: </p>
 </div>
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svgmake" width= 200px height=150px>
-<img src="/assets/Images/StateofTexasFlag_2048x.webp" width= 200px height=200px>
+<img src="/Armaghan_2025/assets/Images/Flag_of_California.svg" width= 200px height=150px>
+<img src="/Armaghan_2025/assets/Images/StateofTexasFlag_2048x.webp" width= 200px height=200px>
 
 ## Sports and Hobbies
 
