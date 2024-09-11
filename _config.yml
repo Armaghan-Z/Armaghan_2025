@@ -3,7 +3,7 @@ description: "Class of 2025"
 owner_name: Armaghan Zarak
 github_username: Armaghan-Z
 github_repo: "Armaghan_2025" 
-baseurl: ""
+baseurl: "/Armaghan_2025"
 future: true
 remote_theme: jekyll/minima
 minima:
@@ -24,4 +24,5 @@ header_pages:
   - navigation/search.md
   - navigation/about.md
   - navigation/Journal.md
+  - navigation/F1.md
   - README4YML.md
