@@ -10,14 +10,14 @@ permalink: /about/
 
 <p>Below is the California state flag to represent where my journey began and where I’ve spent most of my life: </p>
 </div>
-<img src="/Armaghan-Z.github.io/assets/Images/Flag_of_California.svg" width= 200px height=150px>
-<img src="/Armaghan-Z.github.io/assets/Images/StateofTexasFlag_2048x.webp" width= 200px height=200px>
+<img src="/Armaghan_2025/assets/Images/Flag_of_California.svg" width= 200px height=150px>
+<img src="/Armaghan_2025/assets/Images/StateofTexasFlag_2048x.webp" width= 200px height=200px>
 
 ## Sports and Hobbies
 
 I’m a huge sports fan! I love playing basketball, soccer, and American football. When I’m not on the field or court, I enjoy traveling and discovering new, beautiful places around the world. Recently, I had the chance to visit Cappadocia, Turkey, where I experienced an amazing hot air balloon littered sunrise. Here’s a glimpse of that trip:
 
-<img src="/Armaghan-Z.github.io/assets/images/Picture1.jpeg" alt="Hot air balloons littering the Sunrise" width="400px" height="500px"/>
+<img src="/Armaghan_2025/assets/images/Picture1.jpeg" alt="Hot air balloons littering the Sunrise" width="400px" height="500px"/>
 
 ## Goals for This Year
 
@@ -133,10 +133,10 @@ Here’s a small collection of some images that represent my life and interests:
 
 <div class="gallery-container">
   <div class="gallery">
-    <img src="/Armaghan-Z.github.io/assets/Images/Chamanoix-View.jpeg" alt="Chamanoix View">
-    <img src="/Armaghan-Z.github.io/assets/Images/IMG_0282.jpeg" alt="Image 0282">
-    <img src="/Armaghan-Z.github.io/assets/Images/IMG_7755.jpeg" alt="Image 7755">
-    <img src="/Armaghan-Z.github.io/assets/Images/IMG_7828.jpeg" alt="Image 7828">
+    <img src="/Armaghan_2025/assets/Images/Chamanoix-View.jpeg" alt="Chamanoix View">
+    <img src="/Armaghan_2025/assets/Images/IMG_0282.jpeg" alt="Image 0282">
+    <img src="/Armaghan_2025/assets/Images/IMG_7755.jpeg" alt="Image 7755">
+    <img src="/Armaghan_2025/assets/Images/IMG_7828.jpeg" alt="Image 7828">
 
   </div>
 </div>

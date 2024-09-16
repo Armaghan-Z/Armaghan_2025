@@ -107,10 +107,10 @@ hide: true
 <hr>
 
 <!-- About Me Section -->
-<img src="/Armaghan-Z.github.io/assets/Images/Italian-River.jpeg" class="centered-image">
+<img src="/Armaghan_2025/assets/Images/Italian-River.jpeg" class="centered-image">
 
 <div class="bio-section">
-  <!--<img src="{{site.baseurl}}/Armaghan-Z.github.io/assets/images/Charles-Leclerc-Podium.jpeg" alt="Charles Leclerc" width="350" height="300">-->
+  <!--<img src="{{site.baseurl}}/Armaghan_2025/assets/images/Charles-Leclerc-Podium.jpeg" alt="Charles Leclerc" width="350" height="300">-->
   <!--<img src="{{site.baseurl}}/assets/images/Me-in-Italy.jpeg" width="350" height="300">-->
   <h2>Hello, I'm Armaghan Zarak</h2>
   <p>A passionate coder, athlete, and lifelong learner.</p>
