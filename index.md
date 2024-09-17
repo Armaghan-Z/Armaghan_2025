@@ -234,7 +234,7 @@ requestAnimationFrame(loop);
 </script>
 
 <!-- Mario GIF -->
-<img id="running-mario" src="/Armaghan_2025/assets/images/mario-8bit-unscreen.gif">
+<img id="running-mario" src="/Armaghan_2025/assets/Images/mario-8bit-unscreen.gif">
 
 </body>
 </html>
