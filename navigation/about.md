@@ -17,8 +17,8 @@ permalink: /about/
 
 I’m a huge sports fan! I love playing basketball, soccer, and American football. When I’m not on the field or court, I enjoy traveling and discovering new, beautiful places around the world. Recently, I had the chance to visit Cappadocia, Turkey, where I experienced an amazing hot air balloon littered sunrise. Here’s a glimpse of that trip:
 
-<img src="/Armaghan_2025/assets/images/Picture1.jpeg" alt="Hot air balloons littering the Sunrise" width="400px" height="500px"/>
-
+<img src="/Armaghan_2025/assets/Images/Picture1.jpeg" alt="Hot air balloons littering the Sunrise" width="400px" height="500px"/>
+    
 ## Goals for This Year
 
 This year, my primary focus is on improving my coding skills. I want to become proficient enough to create my own website from scratch and master the basics of various coding languages.
