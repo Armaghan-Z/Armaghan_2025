@@ -129,11 +129,17 @@ hide: true
 
 <!-- Snake Game -->
 <canvas width="400" height="400" id="game"></canvas>
+<h2 id="score">Score: 0</h2>
+<h2 id="game-over" style="display:none; color:red; text-align:center;">Game Over! Press Enter to Restart</h2>
+
 <script>
 var canvas = document.getElementById('game');
 var context = canvas.getContext('2d');
 var grid = 16;
 var count = 0;
+var score = 0;
+var gamePaused = false;
+
 var snake = {
   x: 160,
   y: 160,
@@ -142,31 +148,41 @@ var snake = {
   cells: [],
   maxCells: 4
 };
+
 var apple = {
   x: 320,
   y: 320
 };
+
+var powerUp = {
+  x: getRandomInt(0, 25) * grid,
+  y: getRandomInt(0, 25) * grid,
+  active: false
+};
+
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
 function loop() {
+  if (gamePaused) {
+    return; // Pause the game loop if the game is over
+  }
+
   requestAnimationFrame(loop);
+
   if (++count < 4) {
     return;
   }
   count = 0;
+
   // Clear the canvas
   context.clearRect(0, 0, canvas.width, canvas.height);
-  // Draw the grid
-  context.strokeStyle = '#444'; // Grid line color
-  for (var x = 0; x < canvas.width; x += grid) {
-    for (var y = 0; y < canvas.height; y += grid) {
-      context.strokeRect(x, y, grid, grid);
-    }
-  }
+
   // Move the snake
   snake.x += snake.dx;
   snake.y += snake.dy;
+
   // Wrap the snake around the edges
   if (snake.x < 0) {
     snake.x = canvas.width - grid;
@@ -178,44 +194,97 @@ function loop() {
   } else if (snake.y >= canvas.height) {
     snake.y = 0;
   }
+
   // Keep track of the snake's cells
   snake.cells.unshift({ x: snake.x, y: snake.y });
   if (snake.cells.length > snake.maxCells) {
     snake.cells.pop();
   }
+
   // Draw the apple
   context.fillStyle = 'red';
   context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
+
+  // Draw the power-up if active
+  if (powerUp.active) {
+    context.fillStyle = 'blue';
+    context.fillRect(powerUp.x, powerUp.y, grid - 1, grid - 1);
+  }
+
   // Draw the snake
   context.fillStyle = 'green';
   snake.cells.forEach(function (cell, index) {
     context.fillRect(cell.x, cell.y, grid - 1, grid - 1);
+
     // Check if the snake eats the apple
     if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
+      score += 10; // Increase score
+      document.getElementById('score').innerText = 'Score: ' + score;
+
+      // Randomly activate a power-up
+      if (Math.random() < 0.2) {
+        powerUp.active = true;
+        powerUp.x = getRandomInt(0, 25) * grid;
+        powerUp.y = getRandomInt(0, 25) * grid;
+      }
+
       apple.x = getRandomInt(0, 25) * grid;
       apple.y = getRandomInt(0, 25) * grid;
     }
+
+    // Check if the snake eats the power-up
+    if (powerUp.active && cell.x === powerUp.x && cell.y === powerUp.y) {
+      powerUp.active = false;
+      snake.maxCells += 3; // Add 3 segments to the snake
+      score += 50; // Extra points
+      document.getElementById('score').innerText = 'Score: ' + score;
+    }
+
     // Check for snake collision with itself
     for (var i = index + 1; i < snake.cells.length; i++) {
       if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-        snake.x = 160;
-        snake.y = 160;
-        snake.cells = [];
-        snake.maxCells = 4;
-        snake.dx = grid;
-        snake.dy = 0;
-        apple.x = getRandomInt(0, 25) * grid;
-        apple.y = getRandomInt(0, 25) * grid;
+        gamePaused = true; // Pause the game
+        document.getElementById('game-over').style.display = 'block';
+        document.getElementById('score').style.display = 'none';
       }
     }
   });
 }
+
+function resetGame() {
+  snake.x = 160;
+  snake.y = 160;
+  snake.dx = grid;
+  snake.dy = 0;
+  snake.cells = [];
+  snake.maxCells = 4;
+  
+  apple.x = getRandomInt(0, 25) * grid;
+  apple.y = getRandomInt(0, 25) * grid;
+
+  score = 0;
+  document.getElementById('score').innerText = 'Score: ' + score;
+  document.getElementById('score').style.display = 'block';
+  document.getElementById('game-over').style.display = 'none';
+  
+  gamePaused = false; // Unpause the game
+
+  requestAnimationFrame(loop); // Ensure game loop starts again
+}
+
+// Restart game on Enter key press
 document.addEventListener('keydown', function(e) {
-  // Prevent default behavior of arrow keys to stop page scrolling
-  if ([37, 38, 39, 40].includes(e.which)) {
+  // Prevent the default behavior for arrow keys
+  if ([37, 38, 39, 40].indexOf(e.which) > -1) {
     e.preventDefault();
   }
+
+  if (e.which === 13 && gamePaused) {
+    resetGame(); // Restart game when Enter is pressed
+  }
+
+  // Snake movement controls
   if (e.which === 37 && snake.dx === 0) {
     snake.dx = -grid;
     snake.dy = 0;
@@ -230,12 +299,14 @@ document.addEventListener('keydown', function(e) {
     snake.dx = 0;
   }
 });
+
 requestAnimationFrame(loop);
 </script>
+
+
 
 <!-- Mario GIF -->
 <img id="running-mario" src="/Armaghan_2025/assets/Images/mario-8bit-unscreen.gif">
 
 </body>
 </html>
-
