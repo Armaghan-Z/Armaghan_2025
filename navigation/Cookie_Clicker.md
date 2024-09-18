@@ -104,7 +104,7 @@ permalink: /Cookie_Clicker/
   document.getElementById('worker-speed-upgrade').addEventListener('click', function() {
     if (score >= workerSpeedUpgradeCost) {
       score -= workerSpeedUpgradeCost;
-      workerSpeed = Math.max(200, workerSpeed - 200);  // Decrease worker interval, minimum is 200ms
+      workerSpeed = Math.max(200, workerSpeed - 10);  // Decrease worker interval, minimum is 200ms
       workerSpeedUpgradeCost = Math.floor(workerSpeedUpgradeCost * 1.5);  // Increase cost for next upgrade
       updateScore();
       document.getElementById('worker-speed-upgrade').innerText = `Worker Speed Upgrade (Cost: ${workerSpeedUpgradeCost} Cookies)`;
@@ -124,4 +124,11 @@ permalink: /Cookie_Clicker/
     updateScore();
   }, workerSpeed);  // Initially 1000ms
 
+  // Listen for Control + Z to add 99,999,999 cookies
+  document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.key === 'z') {
+      score += 99999999;
+      updateScore();
+    }
+  });
 </script>
