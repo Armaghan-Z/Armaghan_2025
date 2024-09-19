@@ -49,7 +49,7 @@ permalink: /Calculator/
   <button onclick="myFunction()" class="dropbtn">Dropdown</button>
   <div id="myDropdown" class="dropdown-content">
     <a href="/Armaghan_2025/about/">About me</a>
-    <a href="/Armaghan_2025/calculator/">Calculator</a>
+    <a href="/Armaghan_2025/Calculator/">Calculator</a>
     <a href="/Armaghan_2025/F1/">Formula 1</a>
     <a href="/Armaghan_2025/Journal/">My Journal</a>
     <a href="/Armaghan_2025/">My Home Page</a>
