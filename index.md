@@ -57,7 +57,7 @@ hide: true
 </div>
 
 <script>
-  
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -387,3 +387,11 @@ requestAnimationFrame(loop);
 
 </body>
 </html>
+
+<script src="https://utteranc.es/client.js"
+        repo="Armaghan-z/Armaghan_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

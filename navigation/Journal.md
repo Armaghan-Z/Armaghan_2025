@@ -99,3 +99,12 @@ In the this week, my focus shifted towards enhancing the theme and visual appeal
 - **Visual Enhancements**: Applied design changes to improve the overall look and feel of the site, making it more visually appealing and user-friendly.
 
 Overall, these weeks have been a productive period of development and refinement, setting the stage for further enhancements and optimizations.
+
+
+<script src="https://utteranc.es/client.js"
+        repo="Armaghan-z/Armaghan_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

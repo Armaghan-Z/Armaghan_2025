@@ -208,3 +208,12 @@ window.onclick = function(event) {
     }
   });
 </script>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="Armaghan-z/Armaghan_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
