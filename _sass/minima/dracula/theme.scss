@@ -28,7 +28,7 @@ $dt-green-light: rgb(172, 229, 145);
 }
 
 .language-python + .language-plaintext code { background-color: none !important; }
-.language-python + .language-plaintext pre  { background-color: #323443 !important; }
+.language-python + .language-plaintext pre  { background-color: #c5c2c2 !important; }
 
 // for Jupyter Notebook HTML Code Cells modified from https://www.fast.ai/public/css/hyde.css
 
@@ -37,7 +37,7 @@ $dt-green-light: rgb(172, 229, 145);
     margin-top:1.5rem !important;
     padding-bottom:0 !important;
     padding-top:0 !important;
-    background: #323443 !important;
+    background: #c5c2c2 !important;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace;
