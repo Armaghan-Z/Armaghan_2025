@@ -82,8 +82,87 @@ window.onclick = function(event) {
 
 </body>
 </html>
-
-<h3> If You hear something weird, such as trailers or many trailers playing at once, please refresh your page.</h3>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <style>
+        /* Styles for the modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>If you hear something weird, such as trailers or many trailers playing at once, please refresh your page.</p>
+            <label>
+                <input type="checkbox" id="dontAskAgain"> Don't ask again
+            </label>
+            <br><br>
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+    <script>
+        // Check if the user has previously chosen "Don't ask again"
+        if (!localStorage.getItem('dontAskAgain')) {
+            document.getElementById('myModal').style.display = 'block';
+        }
+        // Get the button that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var okButton = document.getElementById('okButton');
+        var dontAskAgainCheckbox = document.getElementById('dontAskAgain');
+        // When the user clicks on the close button, close the modal
+        span.onclick = function() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+        // When the user clicks OK, close the modal and save the choice if checked
+        okButton.onclick = function() {
+            if (dontAskAgainCheckbox.checked) {
+                localStorage.setItem('dontAskAgain', 'true');
+            }
+            document.getElementById('myModal').style.display = 'none';
+        }
+        // Close the modal if the user clicks outside of it
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('myModal')) {
+                document.getElementById('myModal').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
 
 ## About Me
 <div>
