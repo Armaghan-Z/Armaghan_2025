@@ -82,6 +82,8 @@ window.onclick = function(event) {
 </body>
 </html>
 
+## If You hear something weird, such as trailers or many trailers playing at once, please refresh your page.
+
 ## About Me
 <div>
 <p>Hello! My name is Armaghan Zarak, and I have a diverse background when it comes to places I’ve called home. I was born in California, specifically in the Bay Area, where I spent my first two years in San Jose. After that, I moved to Dallas, Texas, and lived there for seven years, which gave me a unique perspective on life in both states. For the past seven years, I’ve been back in California, and it feels great to be home again! </p>
