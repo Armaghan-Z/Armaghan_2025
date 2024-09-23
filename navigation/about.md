@@ -293,6 +293,10 @@ Here’s a small collection of some images that represent my life and interests:
     }
 </style>
 
+## Explore the World of APIs
+<div id="itunes-results"></div>
+<script src="{{ '/assets/js/itunes-api.js' | relative_url }}"></script>
+
 <script src="https://utteranc.es/client.js"
         repo="Armaghan-z/Armaghan_2025"
         issue-term="pathname"
