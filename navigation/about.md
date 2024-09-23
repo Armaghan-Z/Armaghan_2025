@@ -126,7 +126,7 @@ window.onclick = function(event) {
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>If you hear something weird, such as trailers or many trailers playing at once, please refresh your page.</p>
+            <p>If you hear something weird, such as trailers or many trailers playing at once, please refresh your page. I am still tryinng to figure it out 😁.</p>
             <label>
                 <input type="checkbox" id="dontAskAgain"> Don't ask again
             </label>
