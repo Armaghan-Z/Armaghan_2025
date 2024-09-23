@@ -82,7 +82,7 @@ window.onclick = function(event) {
 </body>
 </html>
 
-## If You hear something weird, such as trailers or many trailers playing at once, please refresh your page.
+<h3> If You hear something weird, such as trailers or many trailers playing at once, please refresh your page.</h3>
 
 ## About Me
 <div>
