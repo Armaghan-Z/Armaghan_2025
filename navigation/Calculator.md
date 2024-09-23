@@ -53,6 +53,7 @@ permalink: /Calculator/
     <a href="/Armaghan_2025/F1/">Formula 1</a>
     <a href="/Armaghan_2025/Journal/">My Journal</a>
     <a href="/Armaghan_2025/">My Home Page</a>
+    <a href="/Armaghan_2025/Cookie_Clicker/">Cookie Clicker</a>
 
   </div>
 </div>
