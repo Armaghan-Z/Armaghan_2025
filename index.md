@@ -54,24 +54,18 @@ hide: true
     <a href="/Armaghan_2025/Journal/">My Journal</a>
     <a href="/Armaghan_2025/">My Home Page</a>
     <a href="/Armaghan_2025/Cookie_Clicker/">Cookie Clicker</a>
-
   </div>
 </div>
 
 <script>
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
+    for (var i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
@@ -110,16 +104,18 @@ window.onclick = function(event) {
       color: black;
     }
     body {
-  margin: 0;
-  padding-top: 50px; /* Adjust to the height of the navbar */
-  background: white;  /* Change this to white */
-  color: black;  /* Update text color to black for readability */
-  font-family: 'Segoe UI', sans-serif;
-}
+      margin: 0;
+      padding-top: 50px; /* Adjust to the height of the navbar */
+      background: white;  /* Change this to white */
+      color: black;  /* Update text color to black for readability */
+      font-family: 'Segoe UI', sans-serif;
+    }
     canvas {
-  border: 1px solid white;
-  background-color: black; /* Set background to black */
-}
+      border: 1px solid white;
+      background-color: black; /* Set background to black */
+      display: block; /* Make canvas block element */
+      margin: 0 auto; /* Center the canvas */
+    }
     h1, h2 {
       text-align: center;
       color: #e4002b;
@@ -189,8 +185,6 @@ window.onclick = function(event) {
 <img src="/Armaghan_2025/assets/Images/Italian-River.jpeg" class="centered-image">
 
 <div class="bio-section">
-  <!--<img src="{{site.baseurl}}/Armaghan_2025/assets/images/Charles-Leclerc-Podium.jpeg" alt="Charles Leclerc" width="350" height="300">-->
-  <!--<img src="{{site.baseurl}}/assets/images/Me-in-Italy.jpeg" width="350" height="300">-->
   <h2>Hello, I'm Armaghan Zarak</h2>
   <p>A passionate coder, athlete, and lifelong learner.</p>
   <p>From crafting clean code to getting baskets on the court, I thrive on challenge and creativity. This site is a blend of my interests, including projects, thoughts, and things I love to do. Feel free to explore!</p>
@@ -207,7 +201,9 @@ window.onclick = function(event) {
 <p> - Right below this is a game that I sourced from GitHub. I used HTML and markdown ideology to edit the color and movement speed of the snake. You are able to control using the up, down, left, and right arrow keys.</p>
 
 <!-- Snake Game -->
-<canvas width="400" height="400" id="game"></canvas>
+<div style="text-align: center;"> <!-- Center the canvas -->
+  <canvas width="400" height="400" id="game"></canvas>
+</div>
 <h2 id="score">Score: 0</h2>
 <h2 id="game-over" style="display:none; color:red; text-align:center;">Game Over! Press Enter to Restart</h2>
 
@@ -378,11 +374,8 @@ document.addEventListener('keydown', function(e) {
     snake.dx = 0;
   }
 });
-
 requestAnimationFrame(loop);
 </script>
-
-
 
 <!-- Mario GIF -->
 <img id="running-mario" src="/Armaghan_2025/assets/Images/mario-8bit-unscreen.gif">
