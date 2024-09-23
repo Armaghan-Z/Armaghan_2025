@@ -1,10 +1,30 @@
 @charset "utf-8";
 
+// Define color variables
+$text-color: #333;                  // Main text color
+$background-color: #ffffff;         // Background color
+$link-base-color: #1e90ff;          // Link color
+$link-visited-color: #551a8b;       // Visited link color
+$text-color-light: #777;            // Light text for blockquotes, etc.
+$border-color-light: #ddd;          // Light border color
+$border-color-dark: #aaa;           // Dark border color
+$code-background-color: #f4f4f4;    // Background for code blocks
+$pre-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);  // Shadow for code blocks
+$table-text-color: #444;            // Table text color
+$table-border-color: #ccc;          // Table border color
+$table-zebra-color: #f9f9f9;        // Zebra stripe color for tables
+$table-header-bg-color: #eaeaea;    // Header background for tables
+$table-header-border: #ccc;         // Header border color for tables
+$subscribe-color: #ff4500;          // Subscribe button/link color
+$dropdown-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); // Dropdown shadow
+
+// Body
 body {
   color: $text-color;
   background-color: $background-color;
 }
 
+// Links
 a {
   color: $link-base-color;
 
@@ -17,11 +37,13 @@ a {
   }
 }
 
+// Blockquotes
 blockquote {
   color: $text-color-light;
   border-left-color: $border-color-light;
 }
 
+// Code blocks
 pre,
 code {
   background-color: $code-background-color;
@@ -31,6 +53,7 @@ pre {
   box-shadow: $pre-shadow;
 }
 
+// Highlighted code
 .highlight {
   background: $code-background-color;
 
@@ -39,6 +62,7 @@ pre {
   }
 }
 
+// Tables
 table {
   color: $table-text-color;
   border-color: $table-border-color;
@@ -59,19 +83,19 @@ table {
   }
 }
 
-
-///////// Layout ///////////
-
+// Site Header
 .site-header {
   background-color: $background-color;
   border-top-color: $border-color-dark;
   border-bottom-color: $border-color-light;
 }
 
+// Site Sidebar
 .site-sidebar {
   border-color: $border-color-light;
 }
 
+// Site Title
 .site-title {
   color: $text-color;
   
@@ -80,6 +104,7 @@ table {
   }
 }
 
+// Navigation
 .site-nav {
   background-color: $background-color;
   border-color: $border-color;
@@ -100,34 +125,41 @@ table {
   }
 }
 
+// Post List
 .post-list {
   li {
     border-bottom-color: $border-color-light;
   }
 }
 
+// Post Header
 .post-header {
   border-bottom-color: $border-color-light;
 }
 
+// Post Meta
 .post-meta {
   color: $text-color-light;
 }
 
+// Post Footer
 .post-footer {
   border-color: $border-color-light;
 }
 
+// Post Pagination
 .post-pagination {
   border-color: $border-color-light;
 }
 
+// Post Tags
 ul.post-tags {
   li {
     background-color: $border-color-light;
   }
 }
 
+// Pagination
 .pagination {
   li {
     a, div {
@@ -146,25 +178,30 @@ ul.post-tags {
   }
 }
 
+// Taxonomy Count
 .taxonomy-count {
   color: $text-color-light;
 }
 
+// Site Footer
 .site-footer {
   color: $text-color-light;
   border-top-color: $border-color-light;
 }
 
+// Sidebar Section
 .sidebar-section {
   border-bottom-color: $border-color-light;
 }
 
+// Feed Subscribe
 .feed-subscribe {
   a {
     color: $subscribe-color;
   }
 }
 
+// Table of Contents
 .toc-title {
   color: $background-color;
   background-color: $border-color-dark;
@@ -182,4 +219,14 @@ ul.post-tags {
       background-color: $border-color-light;
     }
   }
+}
+
+pre {
+  background-color: #f5f5f5; /* Light gray background */
+  border: 1px solid var(--border-color); /* Optional border */
+  padding: 1em; /* Optional padding */
+}
+
+code {
+  background-color: #e8e8e8; /* Slightly darker gray for inline code */
 }
