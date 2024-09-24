@@ -190,6 +190,13 @@ window.onclick = function(event) {
   <p>From crafting clean code to getting baskets on the court, I thrive on challenge and creativity. This site is a blend of my interests, including projects, thoughts, and things I love to do. Feel free to explore!</p>
 </div>
 
+<h2>Here is some of my notebooks!</h2>
+<a href="/Armaghan_2025/jupyter/Emoji-print" target="_blank">
+  <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Go to Emoji Jupyter Notebook
+  </button>
+</a>
+
 <h2> My Favorite Spotify Playlist 🎶</h2>
 
 <p>Here’s a Spotify playlist that I love listening to while working or just in General 😄:</p>
