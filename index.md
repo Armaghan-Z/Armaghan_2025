@@ -196,6 +196,16 @@ window.onclick = function(event) {
     Go to Emoji Jupyter Notebook
   </button>
 </a>
+<a href="/Armaghan_2025/jupyter/Frontend" target="_blank">
+  <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Go to Frontend Jupyter Notebook
+  </button>
+</a>
+<a href="/Armaghan_2025/F1" target="_blank">
+  <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Go to Formula 1 Notebook
+  </button>
+</a>
 
 <h2> My Favorite Spotify Playlist 🎶</h2>
 
