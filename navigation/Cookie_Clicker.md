@@ -81,6 +81,7 @@ window.onclick = function(event) {
 
 </body>
 </html>
+
 <style>
   body {
     text-align: center;

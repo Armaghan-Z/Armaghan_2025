@@ -4,7 +4,6 @@ title: My Handy calculator
 permalink: /Calculator/
 ---
 
-
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +30,7 @@ permalink: /Calculator/
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 100; /* Ensures dropdown is on top */
 }
 .dropdown-content a {
   color: black;
@@ -54,13 +53,11 @@ permalink: /Calculator/
     <a href="/Armaghan_2025/Journal/">My Journal</a>
     <a href="/Armaghan_2025/">My Home Page</a>
     <a href="/Armaghan_2025/Cookie_Clicker/">Cookie Clicker</a>
-
   </div>
 </div>
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -115,6 +112,7 @@ window.onclick = function(event) {
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 10px;
       padding: 10px;
+      z-index: 1; /* Ensure calculator is behind the dropdown */
     }
     .calculator-number, .calculator-operation, .calculator-clear, .calculator-equals {
       border-radius: 5px;
@@ -261,10 +259,9 @@ window.onclick = function(event) {
   </main>
 
   <footer class="site-footer">
-    <div class="wrapper">
-      <p>&copy; 2024 My Handy Calculator</p>
-    </div>
+    <span class="site-footer-owner"><a href="/Armaghan_2025/">My home page</a></span>
   </footer>
+
 </body>
 </html>
 
