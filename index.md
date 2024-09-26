@@ -203,7 +203,7 @@ window.onclick = function(event) {
 </a>
 <a href="/Armaghan_2025/attempted_vs_accomplished/" target="_blank">
   <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-    Go to Attemptec vs. Accomplished 1 Notebook
+    Go to Attempted vs Accomplished 1 Notebook
   </button>
 </a>
 
