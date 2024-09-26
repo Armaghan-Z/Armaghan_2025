@@ -201,10 +201,10 @@ window.onclick = function(event) {
     Go to Frontend Jupyter Notebook
   </button>
 </a>
-<div></div>
+
 <a href="/Armaghan_2025/attempted_vs_accomplished/" target="_blank">
   <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-    Go to Attempted vs Accomplished 1 Notebook
+  Attempted vs Accomplished 1
   </button>
 </a>
 
