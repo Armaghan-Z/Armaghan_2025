@@ -116,27 +116,7 @@ Building upon the previous weeks, I continued to enhance the website with severa
 
 Overall, Weeks 3 and 4 were a significant period of growth and creativity. I successfully expanded the scope of my website, integrating diverse features and content that reflect my interests and skills, while continuously enhancing user experience.
 
-####  Weeks 5 & 6: Sprint 2
-
-- **3.8.1** I Created Period 3's 3.8.1 lesson going over Recursion, Iteration, and Nested For loops.
-In weeks 5 and 6, my primary focus was on creating detailed lesson content while continuing to refine my website and existing features.
-
-### Lesson Page on Iteration, Recursion, and Nested For Loops
-I dedicated a significant amount of time to creating and structuring my lesson page on iteration, recursion, and nested for loops. The page includes:
-
-- **Concept Explanations**: I provided clear definitions and explanations of key concepts like recursion and nested loops.
-- **Coding Examples**: I integrated Python and JavaScript examples to demonstrate how these concepts are applied in real code.
-- **Popcorn Hacks**: I added interactive coding exercises to help users practice what they’ve learned, including tasks that involve loops and conditionals.
-- **Homework Tasks**: I created homework challenges to further solidify understanding, allowing users to engage with recursion and loops on their own.
-
-### Refinements and Improvements
-Alongside the lesson page, I continued refining my website:
-
-- **Popcorn Hacks Enhancements**: I added more examples and scenarios for users to practice, refining the presentation to make it more user-friendly.
-- **Interactive Features**: I improved the functionality of existing games and quizzes, ensuring they ran smoothly without bugs.
-- **Overall Site Optimization**: Minor tweaks were made to the site’s design and responsiveness to improve the overall user experience.
-
-These weeks were essential for solidifying the educational aspect of my website, ensuring that users not only engage with my content but also learn from it.
+####  Weeks 5 & : Sprint 2
 
 <script src="https://utteranc.es/client.js"
         repo="Armaghan-z/Armaghan_2025"
