@@ -116,7 +116,28 @@ Building upon the previous weeks, I continued to enhance the website with severa
 
 Overall, Weeks 3 and 4 were a significant period of growth and creativity. I successfully expanded the scope of my website, integrating diverse features and content that reflect my interests and skills, while continuously enhancing user experience.
 
-####  Weeks 5 & : Sprint 2
+####  Weeks 5 & 6: Sprint 2
+- **3.8.1** I Created Period 3's 3.8.1 lesson going over Recursion, Iteration, and Nested For loops.
+In weeks 5 and 6, my primary focus was on creating detailed lesson content while continuing to refine my website and existing features.
+### Lesson Page on Iteration, Recursion, and Nested For Loops
+I dedicated a significant amount of time to creating and structuring my lesson page on iteration, recursion, and nested for loops. The page includes:
+- **Concept Explanations**: I provided clear definitions and explanations of key concepts like recursion and nested loops.
+- **Coding Examples**: I integrated Python and JavaScript examples to demonstrate how these concepts are applied in real code.
+- **Popcorn Hacks**: I added interactive coding exercises to help users practice what they’ve learned, including tasks that involve loops and conditionals.
+- **Homework Tasks**: I created homework challenges to further solidify understanding, allowing users to engage with recursion and loops on their own.
+### Refinements and Improvements
+Alongside the lesson page, I continued refining my website:
+- **Popcorn Hacks Enhancements**: I added more examples and scenarios for users to practice, refining the presentation to make it more user-friendly.
+- **Interactive Features**: I improved the functionality of existing games and quizzes, ensuring they ran smoothly without bugs.
+- **Overall Site Optimization**: Minor tweaks were made to the site’s design and responsiveness to improve the overall user experience.
+These weeks were essential for solidifying the educational aspect of my website, ensuring that users not only engage with my content but also learn from it.
+
+- **Script Reflection**: Hey everyone! I’m Armaghan Zarak, and I worked on Big Idea 3.8 with Hithin, Elliot, and Nikhil which was about nested for loops, recursion, and iteration which was what I focused on mostly. Over the past few weeks, we’ve been diving deep into coding, especially focusing on Big Idea 3 for the College Board. Coming in with no coding experience, I feel like I’ve really learned a lot!
+One lesson that stood out was Trevor's group on the Fibonacci sequence. It’s amazing how each number is just the sum of the two before it! Learning about recursion showed me how a function can call itself. It sounded weird at first, but coding it made it click. The homework hacks were super helpful too! I created functions to add, subtract, divide, and find the modulus of two numbers, plus a function to find points on the graph of f(x). It was cool seeing how coding connects with math in a practical way.
+Collaborating with my classmates made this experience even better. We worked on a lesson plan together and used Git to stay organized. Seeing how pull requests and commits helped us share ideas and track progress was awesome. We learned how to handle feedback and fix merge conflicts, which really brought our project together. Plus, we had to make sure our pull requests were accepted on time so we could actually teach our lesson which was pretty stressful and memorable!
+What made our lesson unique was how we organized our topics and added a fun theme. I also enjoyed learning about iteration and nested loops through practical examples like the Popcorn Hack, where we checked numbers for divisibility using recursion. Explaining these concepts to my peers deepened my understanding because I had to know them inside and out to teach them. Knowing how to use lists, nested loops, recursion, and so on has helped me prepare for the AP exam in May.
+Overall, this experience has been super memorable and beneficial. Teaching others improved my coding skills and solidified my grasp of recursion, nested loops, and iteration. I feel like I’ve gotten a lot better, and I’m excited to keep going!
+
 
 <script src="https://utteranc.es/client.js"
         repo="Armaghan-z/Armaghan_2025"
