@@ -218,7 +218,7 @@ I am excited to continue my journey in the world of web development, where I can
 - For this question I said `I only` but this option is incorrect. Option I does not work because it performs the "shorten" step before the "keep palindromes" step.
 
 -**My Average Mcq scores:**
-<img src=/Armaghan_2025/assets/Images/Average-mcq-score.png>
+<img src="/Armaghan_2025/assets/Images/Average-mcq-scores.png" width="450px" height="350px"/>
 <script src="https://utteranc.es/client.js"
         repo="Armaghan-z/Armaghan_2025"
         issue-term="pathname"
