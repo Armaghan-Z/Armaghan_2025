@@ -138,6 +138,30 @@ Collaborating with my classmates made this experience even better. We worked on 
 What made our lesson unique was how we organized our topics and added a fun theme. I also enjoyed learning about iteration and nested loops through practical examples like the Popcorn Hack, where we checked numbers for divisibility using recursion. Explaining these concepts to my peers deepened my understanding because I had to know them inside and out to teach them. Knowing how to use lists, nested loops, recursion, and so on has helped me prepare for the AP exam in May.
 Overall, this experience has been super memorable and beneficial. Teaching others improved my coding skills and solidified my grasp of recursion, nested loops, and iteration. I feel like I’ve gotten a lot better, and I’m excited to keep going!
 
+## Weeks 7 & 8: Backend Development with Flask
+I delved into backend development using Flask, focusing on:
+- **Setting Up Flask Environment**: Configuring the development environment.
+- **Creating Routes and Views**: Developing endpoints for the web application.
+- **Integrating Templates**: Connecting frontend with backend logic.
+- **Implementing Forms**: Handling user input and processing data.
+
+## Weeks 9 & 10: Database Integration and API Development
+These weeks were dedicated to:
+- **Database Setup**: Implementing SQL databases for data persistence.
+- **CRUD Operations**: Developing Create, Read, Update, and Delete functionalities.
+- **API Development**: Creating RESTful APIs for data interaction.
+- **Testing and Debugging**: Ensuring functionality and resolving issues.
+
+## Weeks 11 & 12: Finalizing Project and Presentation Preparation
+In the final phase, I focused on:
+- **Project Refinement**: Polishing features and fixing bugs.
+- **Documentation**: Creating comprehensive guides and comments.
+- **Presentation Preparation**: Organizing materials for the “Night at the Museum” event.
+- **Deployment**: Ensuring the application is live and accessible.
+
+## Reflection
+Throughout this journey, I have gained a deep understanding of both frontend and backend development. The integration of various technologies and the application of theoretical concepts in practical scenarios have been invaluable. Collaborating with peers and receiving feedback have further enriched my learning experience.
+
 
 <script src="https://utteranc.es/client.js"
         repo="Armaghan-z/Armaghan_2025"
