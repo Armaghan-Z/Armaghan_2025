@@ -161,6 +161,10 @@ In the final phase, I focused on:
 
 ## Reflection
 Throughout this journey, I have gained a deep understanding of both frontend and backend development. The integration of various technologies and the application of theoretical concepts in practical scenarios have been invaluable. Collaborating with peers and receiving feedback have further enriched my learning experience.
+I am excited to continue my journey in the world of web development, where I can apply my skills and contribute to meaningful projects that make a positive impact.
+
+<img src="/Armaghan_2025/assets/Images/assets/Images/Screenshot 2024-11-19 at 2.34.41 AM.png" alt="Questions 7's correct answer" width="400px" height="500px"/>
+
 
 
 <script src="https://utteranc.es/client.js"
