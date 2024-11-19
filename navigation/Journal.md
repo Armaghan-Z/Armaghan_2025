@@ -212,11 +212,6 @@ I am excited to continue my journey in the world of web development, where I can
 
 - For this question I said `The sender’s private key` but this option is incorrect. The sender’s private key cannot be used to decrypt the message.
 
-- **Question 48 Using a 4 bit representation for integers:**
-- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-48-mcq.png" alt="Questions 48's correct answer" width="450px" height="350px"/>
-
-- For this question I said `The sender and receiver must have the same private keys` but this option is incorrect. The sender and receiver must have the same private keys to decrypt the message.
-
 - **Question 52 Using a 4 bit representation for integers:**
 - Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-52-mcq.png" alt="Questions 52's correct answer" width="450px" height="350px"/>
 
