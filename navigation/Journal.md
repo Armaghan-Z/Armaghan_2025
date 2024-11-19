@@ -163,9 +163,64 @@ In the final phase, I focused on:
 Throughout this journey, I have gained a deep understanding of both frontend and backend development. The integration of various technologies and the application of theoretical concepts in practical scenarios have been invaluable. Collaborating with peers and receiving feedback have further enriched my learning experience.
 I am excited to continue my journey in the world of web development, where I can apply my skills and contribute to meaningful projects that make a positive impact.
 
-<img src="/Armaghan_2025/assets/Images/assets/Images/Screenshot 2024-11-19 at 2.34.41 AM.png" alt="Questions 7's correct answer" width="400px" height="500px"/>
+## MCQ Review
+ - Taking the AP CSP 2018 multiple-choice practice test was a really eye-opening experience. It gave me a clear idea of where I’m doing well and where I need to improve in computer science. The test covered so many areas—like programming, algorithms, and even how technology impacts society—which made me realize how much there is to learn. One of the biggest takeaways for me was how important it is to think critically and pay attention to the little details in a question. I felt pretty confident with basic programming concepts and algorithms, but I definitely struggled with trickier topics, like data representation and edge cases in problem-solving. Those tougher questions really pointed out that I need to work on reading pseudocode better and understanding how to handle unusual scenarios in algorithms. Another big lesson was learning to stay calm and focused under time pressure, which is something I know I’ll need for the real exam. Overall, the test helped me see what I need to work on and reminded me how important it is to have a solid understanding of the basics. It also gave me a boost of motivation to keep studying and tackling challenges head-on!
 
+**Question 7 Assignment statements with start end and current:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Screenshot-2024-11-19-at-2.34.41-AM.png" alt="Questions 7's correct answer" width="500px" height="250px"/>
 
+- For this question I said `1  3` but this option is incorrect. The values 1 and 3 are the original values of start and current, not the final values.
+
+- **Question 12 Social media 12 year projections:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Screenshot-2024-11-19-at-3.07.29-AM.png" alt="Questions 12's correct answer" width="400px" height="300px"/>
+
+- For this question I said `30.6` but this option is incorrect. The approximation 30.6 million would be a better estimate for year 11.
+
+- **Question 14 Comparing loop algorithms:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-14-mcq.png" alt="Questions 14's correct answer" width="430px" height="250px"/>
+
+- For this question I said `Program A and program B display a different number of values.` but this option is incorrect. Both programs display ten values.
+
+- **Question 25 Shortening strings by replacing TH and IS:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-25-mcqtrue.png" alt="Questions 25's correct answer" width="450px" height="350px"/>s
+
+- For this question I said `"BANANA"` but this option is incorrect. This string can be shortened using byte pair encoding. For example, Open quotation, BANANA, close quotation can be shortened to Open quotation, B, asterisk, asterisk, A, close quotation by replacing each instance of Open quotation, AN, close quotation with Open quotation, asterisk, close quotation.
+
+- **Question 26 Completing robot code by adding if statement:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-26-mcq.png" alt="Questions 26's correct answer" width="450px" height="350px"/>
+
+- For this question I said <img src="/Armaghan_2025/assets/Images/Question-26-Answer.png" width="150px" height="60px"/> 
+ but this option is incorrect. This code segment does not move the robot at all. The robot cannot move right from its initial position, so the body of the IF statement is never executed, and the robot remains at its starting position.
+
+- **Question 35 Musicians and copyright violations:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-35-mcq.png" alt="Questions 35's correct answer" width="450px" height="350px"/>
+
+- For this question I said `Using samples from nondigital sound sources (vinyl records, tapes, etc.)` but this option is incorrect. Using samples from nondigital sound sources could put the musician at risk of violating copyright laws.
+
+- **Question 42 Increasing bit representation for internet protocol:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-42-mcq.png" alt="Questions 42's correct answer" width="450px" height="350px"/>
+
+- For this question I said `96 times as many addresses are available.` but this option is incorrect. IPv6 has 2 raised to the ninety sixth power times as many possible addresses as IPv4.
+
+- **Question 44 Using a 4 bit representation for integers:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-44-mcq.png" alt="Questions 44's correct answer" width="450px" height="350px"/>
+
+- For this question I said `II and III only` but this option is incorrect. The operation 10 plus 7 causes an overflow error, but 12 plus 3 does not produce a result large enough to cause an overflow error.
+
+- **Question 47 Encrypting and decrypting using public key cryptography:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-47-mcq.png" alt="Questions 47's correct answer" width="450px" height="350px"/>
+
+- For this question I said `The sender’s private key` but this option is incorrect. The sender’s private key cannot be used to decrypt the message.
+
+- **Question 48 Using a 4 bit representation for integers:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-48-mcq.png" alt="Questions 48's correct answer" width="450px" height="350px"/>
+
+- For this question I said `The sender and receiver must have the same private keys` but this option is incorrect. The sender and receiver must have the same private keys to decrypt the message.
+
+- **Question 52 Using a 4 bit representation for integers:**
+- Here is the correct answer: <img src="/Armaghan_2025/assets/Images/Question-52-mcq.png" alt="Questions 52's correct answer" width="450px" height="350px"/>
+
+- For this question I said `I only` but this option is incorrect. Option I does not work because it performs the "shorten" step before the "keep palindromes" step.
 
 <script src="https://utteranc.es/client.js"
         repo="Armaghan-z/Armaghan_2025"
