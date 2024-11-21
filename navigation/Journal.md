@@ -159,6 +159,20 @@ In the final phase, I focused on:
 - **Presentation Preparation**: Organizing materials for the “Night at the Museum” event.
 - **Deployment**: Ensuring the application is live and accessible.
 
+## Flocker Review
+
+- My biggest challenge was trying when I would add the channels and groups they would not appear on the site. I had to add them to the database and create a view to display them. But not only that I figured out that you had to run the main.py on debuggger and then log in using toby, atleast that was what I did for the site to show up locally. Only then did the channels and groups show up on the site after and I was actually able to select Undergound Music and its channels existed.
+
+<img src="/Armaghan_2025/assets/Images/Backend-channel.png" alt="channels" width="700px" height="250px"/>
+
+<img src="/Armaghan_2025/assets/Images/Code-backend.png" alt="backend" />
+
+<img src="/Armaghan_2025/assets/Images/group-code.png" alt="backend cont." />
+
+<img src="/Armaghan_2025/assets/Images/group-id.png" alt="backend cont." />
+
+<img src="/Armaghan_2025/assets/Images/channel-df.png" alt="backend cont." />
+
 ## Reflection
 Throughout this journey, I have gained a deep understanding of both frontend and backend development. The integration of various technologies and the application of theoretical concepts in practical scenarios have been invaluable. Collaborating with peers and receiving feedback have further enriched my learning experience.
 I am excited to continue my journey in the world of web development, where I can apply my skills and contribute to meaningful projects that make a positive impact.
