@@ -159,20 +159,6 @@ In the final phase, I focused on:
 - **Presentation Preparation**: Organizing materials for the “Night at the Museum” event.
 - **Deployment**: Ensuring the application is live and accessible.
 
-## Flocker Review
-
-- My biggest challenge was trying when I would add the channels and groups they would not appear on the site. I had to add them to the database and create a view to display them. But not only that I figured out that you had to run the main.py on debuggger and then log in using toby, atleast that was what I did for the site to show up locally. Only then did the channels and groups show up on the site after and I was actually able to select Undergound Music and its channels existed.
-
-<img src="/Armaghan_2025/assets/Images/Backend-channel.png" alt="channels" width="700px" height="250px"/>
-
-<img src="/Armaghan_2025/assets/Images/Code-backend.png" alt="backend" />
-
-<img src="/Armaghan_2025/assets/Images/group-code.png" alt="backend cont." />
-
-<img src="/Armaghan_2025/assets/Images/group-id.png" alt="backend cont." />
-
-<img src="/Armaghan_2025/assets/Images/channel-df.png" alt="backend cont." />
-
 ## Reflection
 Throughout this journey, I have gained a deep understanding of both frontend and backend development. The integration of various technologies and the application of theoretical concepts in practical scenarios have been invaluable. Collaborating with peers and receiving feedback have further enriched my learning experience.
 I am excited to continue my journey in the world of web development, where I can apply my skills and contribute to meaningful projects that make a positive impact.
@@ -236,6 +222,18 @@ I am excited to continue my journey in the world of web development, where I can
 
 - **My MCQ total score:**
 <img src="/Armaghan_2025/assets/Images/Total-mcq-score.png" />
+
+- When I began exploring these topics in CSP, my knowledge was quite limited, as reflected in my 50-67% understanding across several areas. Topics like Binary Numbers (2.1) and Data Compression (2.2) were challenging because they involve abstract thinking and a foundational understanding of how data is represented and optimized. Similarly, Using Programs with Data (2.4), Variables and Assignments (3.1), and Conditionals (3.6) posed difficulties as they require logical problem-solving skills and an ability to work with computational constructs effectively.
+
+- When I began exploring these topics in CSP, my knowledge was quite limited, as reflected in my 50-67% understanding across several areas. Topics like Binary Numbers (2.1) and Data Compression (2.2) were challenging because they involve abstract thinking and a foundational understanding of how data is represented and optimized. Similarly, Using Programs with Data (2.4), Variables and Assignments (3.1), and Conditionals (3.6) posed difficulties as they require logical problem-solving skills and an ability to work with computational constructs effectively.
+
+- To strengthen my grasp, I plan to:
+	1.	**Binary Numbers**: Work on converting numbers between binary and other systems, and explore how binary powers computation.
+	2.	**Data Compression**: Study techniques like lossless and lossy compression with real-world examples like image or text files.
+	3.	V**ariables, Conditionals, and Data in Programs**: Practice coding exercises, focusing on writing programs that manipulate and analyze data using variables and conditional statements.
+	4.	**Legal and Ethical Concerns**: Read case studies about ethical dilemmas in technology and learn about laws like GDPR or DMCA.
+	5.	**Safe Computing**: Explore cybersecurity best practices, such as safe password management and identifying phishing scams.
+
 <script src="https://utteranc.es/client.js"
         repo="Armaghan-z/Armaghan_2025"
         issue-term="pathname"
