@@ -114,22 +114,23 @@ Below is a concise but robust documentation of the **Study Log** feature, meetin
 
 ## **3. Data and List/Dictionaries**
 
-| Data Handling          | Implementation                                                                                           |
-|------------------------|-----------------------------------------------------------------------------------------------------------|
-| **List (Rows)**        | `StudyLog.query.all()` returns a **list** of studylog objects.                                           |
-| **Dictionary (Columns)** | `StudyLog.read()` outputs a **dictionary** of keys (`id`, `subject`, `hours`, `notes`, `date`).          |
-| **JSON Formatting**    | Python `jsonify` returns dictionary data in JSON form to the client.                                      |
+| **List (Rows)**         | The `get()` method calls `StudyLog.query.all()` to retrieve all `StudyLog` records from the database as rows. Each row is converted into a dictionary via `log.read()` and then appended to a list (`studylogs`). |
+| **Dictionary (Columns)**| Each `StudyLog` object’s `read()` method returns a dictionary with keys like `id`, `user_id`, `subject`, `hours_studied`, `notes`, and `date`. |
+| **JSON Formatting**     | Finally, the list of dictionaries is wrapped in `jsonify(studylogs)`, returning the data to the client in valid JSON format. |
 
 ```python
-def read(self):
-    return {
-       "id": self.id,
-       "user_id": self.user_id,
-       "subject": self.subject,
-       "hours_studied": self.hours_studied,
-       "notes": self.notes,
-       "date": self.date.strftime('%Y-%m-%d %H:%M:%S')
-    }
+# GET: Read all study logs from the database
+    @token_required()
+    def get(self):
+        # Query all StudyLog records from database
+        all_studylogs = StudyLog.query.all()
+        # Prepare a list to hold each study log's data
+        studylogs = []
+        for log in all_studylogs:
+            # Convert the study log object into a dictionary
+            studylogs.append(log.read())
+        # Return all study logs as JSON
+        return jsonify(studylogs)
 ```
 
 ---
