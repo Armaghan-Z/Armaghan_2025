@@ -145,26 +145,44 @@ def read(self):
 Below is an example **POST** method, showing sequencing, selection, and iteration.
 
 ```python
-@token_required()
+@token_required()  # Ensures that only authenticated users can access this method
 def post(self):
+    """
+    Handles the creation of a new study log entry.
+    
+    Steps:
+    1. Retrieves JSON data from the request.
+    2. Validates the input to ensure required fields are present.
+    3. Creates a new StudyLog object and stores it in the database.
+    4. Returns the newly created study log entry in JSON format.
+
+    Returns:
+        JSON response with the created study log entry or an error message.
+    """
+
     # SEQUENCING: Steps to process the request
-    data = request.get_json()
-    if not data:  # SELECTION: Checking for valid input
-        return {'message': 'No input data provided'}, 400
+    data = request.get_json()  # Extract JSON data from the incoming request
+    
+    if not data:  # SELECTION: Checking if input data exists
+        return {'message': 'No input data provided'}, 400  # Returns an error if data is missing
 
-    user_id = data.get('user_id')
-    subject = data.get('subject')
-    hours_studied = data.get('hours_studied')
-    notes = data.get('notes')
+    # Extract required fields from the JSON request body
+    user_id = data.get('user_id')  # The ID of the user creating the study log
+    subject = data.get('subject')  # The subject the user studied
+    hours_studied = data.get('hours_studied')  # Number of hours studied
+    notes = data.get('notes')  # Any additional study notes
 
-    # Additional validations...
+    # Additional validations to ensure required fields are provided
     if not user_id:
-        return {'message': 'User ID is required'}, 400
+        return {'message': 'User ID is required'}, 400  # Returns an error if user ID is missing
 
-    # CREATE: Construct object
+    # CREATE: Construct a new StudyLog object with the provided data
     studylog = StudyLog(user_id, subject, hours_studied, notes)
+
+    # Save the new study log entry to the database
     studylog.create()
 
+    # Return the newly created study log entry in JSON format
     return jsonify(studylog.read())
 ```
 
