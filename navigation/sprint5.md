@@ -100,7 +100,7 @@ Below is a concise but robust documentation of the **Study Log** feature, meetin
 
 - Executed via custom CLI commands:
   - `./scripts/db_backup.py`
-  <img src="/Armaghan_2025/assets/Images/post1.png" width="600" height="450" />
+  <img src="/Armaghan_2025/assets/Images/backup1.png" width="600" height="450" />
 
   - `./scripts/db_init.py`
     <img src="/Armaghan_2025/assets/Images/init1.png" width="600" height="450" />
