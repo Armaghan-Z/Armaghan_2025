@@ -145,7 +145,36 @@ try {
 - Enhanced **API security** with token-based authentication.
   📸 <img src="/Armaghan_2025/assets/Images/login.png" alt="database" style="width:100%;"/>
 
+```javascript
+    document.addEventListener('DOMContentLoaded', function() {
+        const isAuthenticated = localStorage.getItem('authenticated') === 'true';
+        if (isAuthenticated) {
+            document.getElementById('classes-container').style.display = "block"; // Show the classes container
+            document.getElementById('prompt-login').style.display = "none"; // Hide the login prompt
+        } else {
+            document.getElementById('classes-container').style.display = "none"; // Hide the classes container
+            document.getElementById('prompt-login').style.display = "block"; // Show the login prompt
+        }
+    });
+```
 
+```javascript
+<div id="classes-container" class="classes-container">
+    <!-- Class Cards -->
+    <div class="class-card world">
+        <a href="{{site.baseurl}}/classes/ap/world/home">📜 AP World History</a>
+    </div>
+    <div class="class-card csp">
+        <a href="{{site.baseurl}}/classes/ap/csp/home">💻 AP CSP</a>
+    </div>
+    <div class="class-card chem">
+        <a href="{{site.baseurl}}/classes/ap/chem/home">⚗️ AP Chemistry</a>
+    </div>
+    <div class="class-card ush">
+        <a href="{{site.baseurl}}/classes/ap/ush/home">🦅 AP US History</a>
+    </div>
+</div>
+```
 ---
 ## **🎨 5. Database Initialization & Restoration**  
 🎯 **Objective:** Ensure a structured and reliable database setup with backup restoration capabilities.  
@@ -161,38 +190,131 @@ try {
 
 <!-- College Board CPT Requirements Met -->
 <section style="background-color: #e3f2fd; padding: 20px; border-left: 5px solid #0d6efd; border-radius: 10px; margin-top: 20px;">
-    <h2 style="color: #0d6efd;">🎯 College Board CPT Requirements Met</h2>
-    <table style="width: 100%; border-collapse: collapse;">
-        <tr>
-            <th style="text-align: left; padding: 8px; border-bottom: 2px solid #0d6efd;">Requirement</th>
-            <th style="text-align: left; padding: 8px; border-bottom: 2px solid #0d6efd;">My Feature Function</th>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Input</td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Users enter study session details, including subject, duration, and notes.</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Use of List/Collection Type</td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Stored study logs in an SQLite database with structured entries for each session.</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">Procedure</td>
-            <td style="padding: 8px; border-bottom: 1px solid #ddd;">When a user submits a study log, it gets added to the database and displayed in the UI.</td>
-        </tr>
-<tr>
-    <td style="padding: 8px; border-bottom: 1px solid #ddd;">Algorithm</td>
-    <td style="padding: 8px; border-bottom: 1px solid #ddd;">Processes and stores study session data, ensuring data integrity and preventing duplicate entries.</td>
-</tr>
-<tr>
-    <td style="padding: 8px; border-bottom: 1px solid #ddd;">Output</td>
-    <td style="padding: 8px; border-bottom: 1px solid #ddd;">Displays a list of logged study sessions, including subject, time studied, and notes.</td>
-</tr>
-<tr>
-    <td style="padding: 8px; border-bottom: 1px solid #ddd;">Functionality Demonstration</td>
-    <td style="padding: 8px; border-bottom: 1px solid #ddd;">User inputs study session details, data is stored in SQLite, and logs can be viewed or modified in the UI.</td>
-</tr>
+    <h2 style="color: #0d6efd; text-align: center;">🎯 College Board CPT Requirements Met</h2>
+    <table style="width: 40%; border-collapse: collapse; border: 1px solid #ddd;">
+        <thead>
+            <tr style="background-color: #0d6efd; color: white;">
+                <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Requirement</th>
+                <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Feature Implementation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 12px; border: 1px solid #ddd;"><b>Input</b></td>
+                <td style="padding: 12px; border: 1px solid #ddd;">
+                    Users submit study session details via a JSON request to the API.  
+                    <br><b>Example:</b>
+                    <pre style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+{
+    "user_id": 1,
+    "subject": "AP Physics",
+    "hours_studied": 2.5,
+    "notes": "Studied Newton's Laws of Motion."
+}
+                    </pre>
+                </td>
+            </tr>
+            <tr style="background-color: #f1f8ff;">
+                <td style="padding: 12px; border: 1px solid #ddd;"><b>Use of List/Collection Type</b></td>
+                <td style="padding: 12px; border: 1px solid #ddd;">
+                    Study logs are stored in an SQL database using SQLAlchemy models.  
+                    <br><b>Retrieving logs:</b>
+                    <pre style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+all_studylogs = StudyLog.query.all()
+studylogs = [log.read() for log in all_studylogs]
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid #ddd;"><b>Procedure</b></td>
+                <td style="padding: 12px; border: 1px solid #ddd;">
+                    The <code>post</code> method processes user input and stores the log in the database.
+                    <br><b>Implementation:</b>
+                    <pre style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+def post(self):
+    data = request.get_json()
+    studylog = StudyLog(data["user_id"], data["subject"], data["hours_studied"], data["notes"])
+    studylog.create()
+    return jsonify(studylog.read())
+                    </pre>
+                </td>
+            </tr>
+            <tr style="background-color: #f1f8ff;">
+                <td style="padding: 12px; border: 1px solid #ddd;"><b>Algorithm</b></td>
+                <td style="padding: 12px; border: 1px solid #ddd;">
+                    Ensures data integrity by checking for existing records before insertion.
+                    <br><b>Duplicate Prevention:</b>
+                    <pre style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+existing_log = StudyLog.query.filter_by(user_id=data["user_id"], subject=data["subject"]).first()
+if not existing_log:
+    studylog = StudyLog(**data)
+    studylog.create()
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; border: 1px solid #ddd;"><b>Output</b></td>
+                <td style="padding: 12px; border: 1px solid #ddd;">
+                    Study logs are retrieved and displayed as JSON.  
+                    <br><b>Response Example:</b>
+                    <pre style="background-color: #f8f9fa; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+return jsonify([log.read() for log in StudyLog.query.all()])
+                    </pre>
+                </td>
+            </tr>
+            <tr style="background-color: #f1f8ff;">
+                <td style="padding: 12px; border: 1px solid #ddd;"><b>Functionality Demonstration</b></td>
+                <td style="padding: 12px; border: 1px solid #ddd;">
+                    Users can input study sessions, view logs, and modify them via API endpoints.
+                    <ul>
+                        <li><b>POST</b>: <code>/api/studylognew</code> - Add new study logs</li>
+                        <li><b>GET</b>: <code>/api/studylognew</code> - Retrieve logs</li>
+                        <li><b>PUT</b>: <code>/api/studylognew</code> - Update logs</li>
+                        <li><b>DELETE</b>: <code>/api/studylognew</code> - Remove logs</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </section>
+# 🚀 How My StudyLogs Project Aligns with AP CSP Big Ideas
+
+## 🛠 Big Idea 1: Creative Development
+- **StudyLogs solves a real-world problem** by allowing users to **track their study sessions, subjects, and progress dynamically**.  
+- The **user interface is interactive**, making it easy to **log, edit, and remove study sessions** with a simple API request.  
+- **Creative problem-solving**: Users can analyze their study habits over time to improve learning efficiency.
+
+---
+
+## 📊 Big Idea 2: Data
+- The project **collects, organizes, and manages study session data**, allowing users to track hours spent on different subjects.  
+- **Data abstraction** is implemented through structured storage (**SQL database, JSON responses, and API endpoints**).  
+- Users can **update and delete logs**, demonstrating effective **data manipulation and persistence**.
+
+---
+
+## 🤖 Big Idea 3: Algorithms and Programming
+- **Custom functions** like `post()` and `get()` process user input and handle database interactions.  
+- Uses **selection (if-statements), iteration (loops), and sequencing** to efficiently **retrieve and manage study logs**.  
+- **Event-driven programming**: API functions execute based on user interactions, such as logging new study sessions.
+
+---
+
+## 🌐 Big Idea 4: Computing Systems & Networks
+- The **frontend interacts with a backend API**, demonstrating real-world **networking and database integration**.  
+- Uses **HTTP requests (GET, POST, PUT, DELETE)** to store and retrieve study session data securely.  
+- **Demonstrates distributed computing**, ensuring that user study logs are accessible across multiple devices.
+
+---
+
+## 🌍 Big Idea 5: Impact of Computing
+- **StudyLogs helps students improve productivity** by tracking their study hours and subjects effectively.  
+- The system can be applied to **education, self-improvement, and time management**, making it a valuable learning tool.  
+- Shows how **computing enhances organization and learning strategies** for better academic performance.
+
+---
+
+This project demonstrates all five **AP CSP Big Ideas** in a meaningful way! 🚀
 <!-- MCQ Performance Section -->
 <section style="background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; border-radius: 8px; margin-top: 20px;">
     <h2 style="color: #d39e00;">🧠 MCQ Performance & Improvement Plan</h2>
@@ -383,12 +505,12 @@ This feedback provides great insight into **what worked well** and **what needs 
   </tr>
   <tr>
     <td>📝 <b>Project Feature Blog Write-Up (CPT/FRQ Language)</b> (1 pt)</td>
-    <td>1/1</td>
+    <td>.9/1</td>
     <td>This blog includes how I completed CPT requirements through my work.</td>
   </tr>
   <tr>
     <td>🧠 <b>MCQ Section</b> (1 pt)</td>
-    <td>1/1</td>
+    <td>.9/1</td>
     <td>Explanation of performance on the MCQs and accuracy in responses.</td>
   </tr>
 </table>
@@ -439,4 +561,4 @@ This feedback provides great insight into **what worked well** and **what needs 
 
 ### 📌 Final Reflection
 
-**_Final Grade: 9.2/10_**
+**_Final Grade: 9.3/10_**
