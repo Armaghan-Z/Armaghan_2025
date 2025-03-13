@@ -4,6 +4,7 @@ description: "This document contains required code segments for the AP CSP Creat
 date: 2025-03-10
 permalink: /ppr/
 categories: [AP Computer Science Principles, Study Log]
+comments: true
 ---
 
 # **AP CSP Personalized Project Reference (PPR)**
@@ -165,7 +166,7 @@ document.getElementById('study-log-form').addEventListener('submit', async funct
 
 
 <script src="https://utteranc.es/client.js"
-        repo="armaghan-z.github.io/Armaghan_2025"
+        repo="Armaghan-z/Armaghan_2025"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"

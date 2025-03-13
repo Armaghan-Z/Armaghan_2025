@@ -4,6 +4,7 @@ description: "This document contains My MCQ practice test review and summary"
 date: 2025-03-10
 permalink: /mcq2/
 categories: [AP Computer Science Principles, Study Log]
+comments: True
 ---
 <html lang="en">
 <head>
