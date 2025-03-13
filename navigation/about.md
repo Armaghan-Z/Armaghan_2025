@@ -289,7 +289,7 @@ Geography is a subject I find fascinating, and I’m always eager to learn more 
 
 ## Image Gallery
 
-Here’s a small collection of some images that represent my life and interests:
+Here’s a small collection of some Images that represent my life and interests:
 
 <div class="gallery-container">
   <div class="gallery">

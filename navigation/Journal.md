@@ -98,7 +98,7 @@ In this segment, my focus shifted toward enhancing the theme and visual appeal o
 #### Weeks 3 & 4: Expanding Content and Features
 Building upon the previous weeks, I continued to enhance the website with several new features and improvements:
 - **Calculator Addition**: Developed and integrated a functional calculator, providing a useful tool for visitors to perform quick calculations.
-- **Image Gallery Expansion**: Added more images throughout the site to create a richer visual experience, showcasing various topics and personal projects.
+- **Image Gallery Expansion**: Added more Images throughout the site to create a richer visual experience, showcasing various topics and personal projects.
 - **Formula 1 Blog**: Launched a dedicated blog section for Formula 1, where I share my thoughts, race analyses, and updates about the sport I am passionate about.
 - **Cookie Clicker Game**: Introduced the classic Cookie Clicker game, adding a fun and addictive element that keeps users engaged.
 - **Jupyter Notebooks Integration**: Included Jupyter notebooks, allowing visitors to explore and interact with my coding projects directly on the site.

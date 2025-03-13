@@ -66,7 +66,7 @@ profiles = [
   - Used **Postman** to verify CRUD operations before implementing the frontend.
 
 ### **Database Table Structure:**
-📸 <img src="images/dbPOST.png" alt="database" style="width:50%;"/>
+📸 <img src="Images/dbPOST.png" alt="database" style="width:50%;"/>
 
 ### **Code Example:**
 ```python
@@ -148,7 +148,7 @@ class Profile(db.Model):
 
 
 📊 **Flashcards Flowchart:** *(inspriation from the student panel)*
-<img src="images/flowchart.png" alt="flowchart" style="width:50%;"/>
+<img src="Images/flowchart.png" alt="flowchart" style="width:50%;"/>
 
 
 ---
@@ -233,7 +233,7 @@ class Profile(db.Model):
 
     <!-- Space for Screenshot -->
     <div style="text-align: center; margin-top: 10px;">
-        <img src="images/MCQ.png" alt="MCQ Scoring Report" style="width: 90%; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="Images/MCQ.png" alt="MCQ Scoring Report" style="width: 90%; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
         <p style="font-size: 14px; color: #555;">📸 Screenshot of MCQ Scoring Report</p>
     </div>
 
@@ -246,8 +246,8 @@ class Profile(db.Model):
 
 # 🎤 **Night at the Museum (N@tM) Presentation**
 
- <img src="images/N@TM.png" alt="flowchart" style="width:90%;"/>
- <img src="images/talk.png" alt="flowchart" style="width:50%;"/>
+ <img src="Images/N@TM.png" alt="flowchart" style="width:90%;"/>
+ <img src="Images/talk.png" alt="flowchart" style="width:50%;"/>
 
 <div>
 
@@ -343,7 +343,7 @@ This feedback provides great insight into **what worked well** and **what needs 
 
     <!-- Image of Studying Together -->
     <div style="text-align: center; margin-bottom: 15px;">
-        <img src="images/brandon.png" alt="Brandon and I studying together" style="width: 60%; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+        <img src="Images/brandon.png" alt="Brandon and I studying together" style="width: 60%; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
         <p style="font-size: 14px; color: #555;">📸 Studying together for the final exam</p>
     </div>
 

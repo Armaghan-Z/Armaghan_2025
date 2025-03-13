@@ -210,7 +210,7 @@ To add pages to the top navigation bar use _config.yml to order and determine wh
 
 ### Blog Page
 
-There is a blog page that has options for images and a description of the page. This page can help the viewer understand what the page is about and what they can expect to find on the page. The way to add images to a page is to have the following front matter `image: /images/file.jpg` and then the name of the image that you want to use. The image must be in the `images` folder. Furthermore, if you would like the file to not show up on the blog page `hide: true` can be added to the front matter.
+There is a blog page that has options for Images and a description of the page. This page can help the viewer understand what the page is about and what they can expect to find on the page. The way to add Images to a page is to have the following front matter `image: /Images/file.jpg` and then the name of the image that you want to use. The image must be in the `Images` folder. Furthermore, if you would like the file to not show up on the blog page `hide: true` can be added to the front matter.
 
 ### SASS support
 

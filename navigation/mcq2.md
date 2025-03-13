@@ -148,3 +148,11 @@ categories: [AP Computer Science Principles, Study Log]
     </div>
 </body>
 </html>
+
+<script src="https://utteranc.es/client.js"
+        repo="Armaghan-Z/Armaghan_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

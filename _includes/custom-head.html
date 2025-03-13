@@ -40,13 +40,13 @@
 
 <script>
 /**
- * Function to wrap images with a figure and caption if they have a title attribute.
+ * Function to wrap Images with a figure and caption if they have a title attribute.
  * This function is executed when the window loads.
  */
 function wrap_img(fn) {
     // Check if the document is already loaded
     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-        // Select all images within elements with the class 'post'
+        // Select all Images within elements with the class 'post'
         var elements = document.querySelectorAll(".post img");
         // Iterate over each image element
         Array.prototype.forEach.call(elements, function(el, i) {

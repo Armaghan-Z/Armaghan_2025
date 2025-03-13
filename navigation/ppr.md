@@ -163,3 +163,11 @@ document.getElementById('study-log-form').addEventListener('submit', async funct
 3. **Database Operations**: The backend processes these requests, performing CRUD operations on the SQLite database.
 4. **Response Handling**: The backend sends responses back to the frontend, which updates the UI accordingly.
 
+
+<script src="https://utteranc.es/client.js"
+        repo="Armaghan-Z/Armaghan_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
