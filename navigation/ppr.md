@@ -165,7 +165,7 @@ document.getElementById('study-log-form').addEventListener('submit', async funct
 
 
 <script src="https://utteranc.es/client.js"
-        repo="Armaghan-Z/Armaghan_2025"
+        repo="armaghan-z.github.io/Armaghan_2025"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
