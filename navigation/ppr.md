@@ -211,3 +211,12 @@ document.getElementById(<span class="string">'study-log-form'</span>).addEventLi
   </div>
 
 </div>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="armaghan-z.github.io/Armaghan_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
