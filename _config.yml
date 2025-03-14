@@ -5,7 +5,7 @@ github_username: Armaghan-Z
 github_repo: "Armaghan_2025" 
 baseurl: "/Armaghan_2025"
 future: true
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@v2.5.0
 minima:
   skin: dark
   social_links:
