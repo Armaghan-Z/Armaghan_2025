@@ -151,7 +151,7 @@ comments: True
 </html>
 
 <script src="https://utteranc.es/client.js"
-        repo="armaghan-z.github.io/Armaghan_2025"
+        repo="Armaghan-z/Armaghan_2025"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
