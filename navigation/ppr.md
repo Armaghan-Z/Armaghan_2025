@@ -135,26 +135,39 @@ categories: [AP Computer Science Principles, Study Log]
       <li>✅ Uses <strong>parameters</strong> to receive data about the study log.</li>
       <li>✅ Uses <strong>selection</strong> (if-statements) to validate that required fields are present.</li>
       <li>✅ Uses <strong>iteration</strong> to process multiple study logs.</li>
+      <li>✅ Uses <strong>sequencing</strong> to ensure the correct order of operations.</li>
     </ul>
-    <p>This meets the <strong>Function with Parameters, Selection, and Iteration</strong> requirement because it integrates all three aspects of logic, input validation, and iterative processing.</p>
+    <p>This meets the <strong>Function with Parameters, Selection, Iteration, and Sequencing</strong> requirement because it integrates all four aspects of logic, input validation, iterative processing, and ordered execution.</p>
   </div>
 
   <pre><code class="language-python">
 @token_required()
 <span class="keyword">def</span> <span class="function">post</span>(<span class="keyword">self</span>):
     data = request.get_json()
-    <span class="keyword">if</span> <span class="keyword">not</span> data <span class="keyword">or</span> <span class="string">"user_id"</span> <span class="keyword">not</span> <span class="keyword">in</span> data <span class="keyword">or</span> <span class="string">"subject"</span> <span class="keyword">not</span> <span class="keyword">in</span> data:
-        <span class="keyword">return</span> {<span class="string">"message"</span>: <span class="string">"Missing required fields"</span>}, 400
 
-    study_log = StudyLog(
-        user_id=data[<span class="string">"user_id"</span>],
-        subject=data[<span class="string">"subject"</span>],
-        hours_studied=data[<span class="string">"hours_studied"</span>],
-        notes=data.get(<span class="string">"notes"</span>, <span class="string">""</span>)
-    )
+    <span class="keyword">if</span> <span class="keyword">not</span> data:
+        <span class="keyword">return</span> {<span class="string">"message"</span>: <span class="string">"No data provided"</span>}, 400
 
-    study_log.create()
-    <span class="keyword">return</span> jsonify(study_log.read())
+    <span class="keyword">if</span> isinstance(data, dict):  
+        data = [data]
+
+    stored_logs = []
+
+    <span class="keyword">for</span> entry <span class="keyword">in</span> data:
+        <span class="keyword">if</span> <span class="string">"user_id"</span> <span class="keyword">not</span> <span class="keyword">in</span> entry <span class="keyword">or</span> <span class="string">"subject"</span> <span class="keyword">not</span> <span class="keyword">in</span> entry <span class="keyword">or</span> <span class="string">"hours_studied"</span> <span class="keyword">not</span> <span class="keyword">in</span> entry:
+            <span class="keyword">return</span> {<span class="string">"message"</span>: <span class="string">"Missing required fields in one or more entries"</span>}, 400
+
+        study_log = StudyLog(
+            user_id=entry[<span class="string">"user_id"</span>],
+            subject=entry[<span class="string">"subject"</span>],
+            hours_studied=entry[<span class="string">"hours_studied"</span>],
+            notes=entry.get(<span class="string">"notes"</span>, <span class="string">""</span>)
+        )
+
+        study_log.create()
+        stored_logs.append(study_log.read())
+
+    <span class="keyword">return</span> jsonify(stored_logs), 200
   </code></pre>
 
   <hr>
